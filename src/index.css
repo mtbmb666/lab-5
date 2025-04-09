@@ -1,0 +1,271 @@
+:root {
+  --bg-light: #f8f9fa;
+  --text-light: #212529;
+  --primary-light: #0d6efd;
+  --secondary-light: #6c757d;
+  --border-light: #dee2e6;
+  --success-light: #198754;
+  --danger-light: #dc3545;
+  --warning-light: #ffc107;
+
+  --bg-dark: #212529;
+  --text-dark: #f8f9fa;
+  --primary-dark: #0d6efd;
+  --secondary-dark: #adb5bd;
+  --border-dark: #495057;
+  --success-dark: #20c997;
+  --danger-dark: #ff6b6b;
+  --warning-dark: #ffd43b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app {
+  min-height: 100vh;
+  transition: all 0.3s ease;
+}
+
+.light {
+  background-color: var(--bg-light);
+  color: var(--text-light);
+}
+
+.dark {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+.light .card {
+  background-color: white;
+  border: 1px solid var(--border-light);
+}
+
+.dark .card {
+  background-color: #2c3034;
+  border: 1px solid var(--border-dark);
+}
+
+.btn {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background-color: var(--primary-light);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #0b5ed7;
+}
+
+.btn-secondary {
+  background-color: var(--secondary-light);
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #5c636a;
+}
+
+.dark .btn-secondary {
+  background-color: #6c757d;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.form-control {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid var(--border-light);
+  width: 100%;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.dark .form-control {
+  background-color: #2c3034;
+  border-color: var(--border-dark);
+  color: var(--text-dark);
+}
+
+.card {
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.auth-card {
+  width: 400px;
+  max-width: 90%;
+}
+
+.task-status-column {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  padding: 16px;
+  min-height: 300px;
+}
+
+.dark .task-status-column {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.task-item {
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  cursor: grab;
+}
+
+.light .task-item {
+  background-color: white;
+  border: 1px solid var(--border-light);
+}
+
+.dark .task-item {
+  background-color: #343a40;
+  border: 1px solid var(--border-dark);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background-color: var(--primary-light);
+  color: white;
+}
+
+.sidebar {
+  width: 250px;
+  height: calc(100vh - 56px);
+  position: fixed;
+  top: 56px;
+  left: 0;
+  padding: 16px;
+  transition: all 0.3s;
+}
+
+.light .sidebar {
+  background-color: #f1f3f5;
+  border-right: 1px solid var(--border-light);
+}
+
+.dark .sidebar {
+  background-color: #343a40;
+  border-right: 1px solid var(--border-dark);
+}
+
+.content {
+  margin-left: 250px;
+  padding: 24px;
+  min-height: calc(100vh - 56px);
+}
+
+.nav-link {
+  display: block;
+  padding: 8px 16px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.dark .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-link.active {
+  background-color: var(--primary-light);
+  color: white;
+}
+
+.badge {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.badge-primary {
+  background-color: var(--primary-light);
+  color: white;
+}
+
+.badge-success {
+  background-color: var(--success-light);
+  color: white;
+}
+
+.badge-warning {
+  background-color: var(--warning-light);
+  color: #212529;
+}
+
+.badge-danger {
+  background-color: var(--danger-light);
+  color: white;
+}
+
+.grid {
+  display: grid;
+  gap: 16px;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 768px) {
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    width: 0;
+    overflow: hidden;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+
+  .sidebar.open {
+    width: 250px;
+  }
+
+  .content.sidebar-open {
+    margin-left: 250px;
+  }
+}

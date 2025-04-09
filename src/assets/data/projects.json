@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1",
+    "name": "Website Redesign",
+    "description": "Complete redesign of the company website to improve user experience and conversion rates.",
+    "status": "in-progress",
+    "priority": "high",
+    "dueDate": "2023-12-31",
+    "createdAt": "2023-01-15"
+  },
+  {
+    "id": "2",
+    "name": "Mobile App Development",
+    "description": "Develop a cross-platform mobile application for iOS and Android devices.",
+    "status": "planning",
+    "priority": "medium",
+    "dueDate": "2024-03-15",
+    "createdAt": "2023-05-20"
+  },
+  {
+    "id": "3",
+    "name": "Content Marketing Strategy",
+    "description": "Develop and implement a comprehensive content marketing strategy for Q4.",
+    "status": "completed",
+    "priority": "medium",
+    "dueDate": "2023-10-01",
+    "createdAt": "2023-07-05"
+  },
+  {
+    "id": "4",
+    "name": "CRM Integration",
+    "description": "Integrate our existing systems with a new CRM solution to improve customer data management.",
+    "status": "in-progress",
+    "priority": "high",
+    "dueDate": "2023-11-30",
+    "createdAt": "2023-06-12"
+  },
+  {
+    "id": "5",
+    "name": "Employee Training Program",
+    "description": "Develop a comprehensive training program for new hires in the development department.",
+    "status": "planning",
+    "priority": "low",
+    "dueDate": "2023-12-15",
+    "createdAt": "2023-08-30"
+  },
+  {
+    "id": "6",
+    "name": "Product Launch",
+    "description": "Coordinate the launch of our new flagship product, including marketing and PR activities.",
+    "status": "planning",
+    "priority": "high",
+    "dueDate": "2024-01-31",
+    "createdAt": "2023-09-10"
+  }
+]
